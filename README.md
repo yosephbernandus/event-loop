@@ -69,5 +69,4 @@ EPOLL SERVER FLOW:
 - Multi-client TCP server using epoll for efficient I/O
 - Non-blocking sockets with epoll event notification
 - Handle multiple connections concurrently in single thread
-- Professional event-driven architecture
 
