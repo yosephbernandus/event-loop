@@ -14,7 +14,9 @@
       {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
+            gcc
             liburing
+            pkg-config
           ];
 
           shellHook = ''
