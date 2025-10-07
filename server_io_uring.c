@@ -153,11 +153,6 @@ int main(int argc, char *argv[]) {
   struct sockaddr_in client_addr;
   socklen_t client_len = sizeof(client_addr);
 
-  int port = PORT;
-  if (argc > 1) {
-    port = atoi(argv[1]);
-  }
-
   // Initialize io_uring with queue depth
   if (io_uring_queue_init(QUEUE_DEPTH, &ring, 0) < 0) {
     perror("io_uring_queue_init");
